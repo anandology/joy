@@ -108,10 +108,8 @@ SQRT2 = 2**0.5
 # Random suffix to avoid conflicts between ids of multiple sketches in the same page
 ID_SUFFIX = "".join(random_module.choice(string.ascii_letters+string.digits) for i in range(4))
 
-def shape_sequence():
-    return (f"s-{i}-{ID_SUFFIX}" for i in itertools.count())
+_shape_counter = itertools.count()
 
-shape_seq = shape_sequence()
 
 class Shape:
     """Shape is the base class for all shapes in Joy.
@@ -129,9 +127,13 @@ class Shape:
         self.attrs = attrs
         self.transform = None
 
+    def _get_next_shape_id(self):
+        id = next(_shape_counter)
+        return f"s-{id}-{ID_SUFFIX}" 
+
     def get_reference(self):
         if not "id" in self.attrs:
-            self.attrs["id"] = next(shape_seq)
+            self.attrs["id"] = self._get_next_shape_id()
 
         attrs = {"xlink:href": "#" + self.id}
         return Shape("use", **attrs)
