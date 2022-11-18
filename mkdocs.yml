@@ -2,8 +2,23 @@ site_name: Joy
 theme:
   name: material
 
+plugins:
+  - feather:
+      server_url: https://livecode.pipal.in/
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - js/joy.js
+extra_css:
+  - css/style.css
+
 nav:
   - index.md
   - reference.md
+  - examples/index.md
 
-repo_url: https://github.com/fossunited/joy
+
+repo_url: https://github.com/anandology/joy

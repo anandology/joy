@@ -2,6 +2,11 @@
 
 Joy is a tiny creative coding library in Python.
 
-**Documentation:** <https://fossunited.github.com/joy>
+```{.joy .feather}
+shape = circle(x=100, r=50) | repeat(100, scale(0.97)|rotate(10))
+show(shape)
+```
 
-**Source Code:** <https://github.com/fossunited/joy>
+**Documentation:** <https://anandology.com/joy>
+
+**Source Code:** <https://github.com/anandology/joy>
