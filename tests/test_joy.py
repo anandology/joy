@@ -12,13 +12,14 @@ import pytest
 import re
 import yaml
 from pathlib import Path
+import itertools
 
 @pytest.fixture()
 def reset_joy():
     import joy
     # reset id_suffix and shape counter
     joy.ID_SUFFIX = "0000"
-    joy.shape_seq = joy.shape_sequence()
+    joy._shape_counter = itertools.count()
     yield
 
 def test_clone():
