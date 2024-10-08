@@ -14,5 +14,5 @@ rectangle(w=300, h=300) | repeat(100, scale(0.92)|rotate(5))
 
 </div>
 
-Do you think some curves in the image? Actually, there are no curves drawn. What you see are just the sides of squares.
+Do you see some curves in the image? Actually, there are no curves in it, only straigt lines! What you see are just the sides of squares.
 
