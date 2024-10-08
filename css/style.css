@@ -1,0 +1,35 @@
+#output-tabs {
+    display: none;
+}
+div.output-wrapper {
+    padding: 0px;
+    border: 0px;
+    margin-top: 10px;
+}
+
+div.image img, div.image svg {
+    padding: 10px;
+    border: 10px solid #aaa;
+}
+
+.example {
+    margin: 10px 0px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+}
+
+a.thumbnail {
+    display: inline-grid;
+    margin: 10px;
+}
+
+a.thumbnail img {
+    padding: 5px;
+    border: 5px solid #aaa;
+    width: 150px;
+    height: 150px;
+}
