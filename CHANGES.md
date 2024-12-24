@@ -1,5 +1,10 @@
 ## Unreleased\
 
+## Version 0.4.0 - 2024-12-24
+
+* Added setup.py to release a pypi package
+* Improved the docs
+
 ## Version 0.3.1 - 2021-12-29
 * Fixed inconsistencies in rendering caused due to a bug in cloning the node (#34)
 

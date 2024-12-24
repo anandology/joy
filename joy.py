@@ -100,8 +100,8 @@ import itertools
 import random as random_module
 import string
 
-__version__ = "0.3.1"
-__author__ = "Anand Chitipothu <anand@fossunited.org>"
+__version__ = "0.4.0"
+__author__ = "Anand Chitipothu <anandology@gmail.com>"
 
 SQRT2 = 2**0.5
 
@@ -129,7 +129,7 @@ class Shape:
 
     def _get_next_shape_id(self):
         id = next(_shape_counter)
-        return f"s-{id}-{ID_SUFFIX}" 
+        return f"s-{id}-{ID_SUFFIX}"
 
     def get_reference(self):
         if not "id" in self.attrs:

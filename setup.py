@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='python-joy',
-    version='0.3.1',
+    version='0.4.0',
     description='Tiny creative coding library in Python',
     author='Anand Chitipothu',
     author_email='anandology@gmail.com',
