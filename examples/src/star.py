@@ -1,0 +1,1 @@
+line() | repeat(18, rotate(10))
