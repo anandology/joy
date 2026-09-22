@@ -1,3 +1,0 @@
-mkdocs-material
-git+https://github.com/pipalacademy/mkdocs-feather.git#egg=mkdocs-feather
-pytest

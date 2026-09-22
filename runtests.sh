@@ -1,3 +1,3 @@
 #! /bin/bash
 
-exec pytest
+exec uv run pytest "$@"

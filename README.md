@@ -4,12 +4,22 @@ Joy is a tiny creative coding library in Python.
 
 ## Installation
 
-The easiest way to install it is download `joy.py` and place it in your
-directory. The library has no dependencies.
+Joy is available on PyPI as `python-joy`. Install it using pip:
 
-It can be downloaded from:
+```
+pip install python-joy
+```
 
-<https://github.com/fossunited/joy/raw/main/joy.py>
+Or add it to your project using uv:
+
+```
+uv add python-joy
+```
+
+The library has no dependencies, so you can also download `joy.py` and
+place it in your directory. It can be downloaded from:
+
+<https://github.com/anandology/joy/raw/main/joy.py>
 
 ## Coordinate System
 
@@ -42,7 +52,7 @@ c = circle()
 show(c)
 ```
 
-![svg](images/circle.svg)
+![svg](https://anandology.com/joy/images/circle.svg)
 
 By default circle will have center at `(0, 0)` and radius as `100`. But
 you can specify different values.
@@ -52,7 +62,7 @@ c = circle(x=50, y=50, r=50)
 show(c)
 ```
 
-![svg](images/circle-2.svg)
+![svg](https://anandology.com/joy/images/circle-2.svg)
 
 The other basic types that are supported are `ellipse`, `rectangle`,
 and `line`:
@@ -65,7 +75,7 @@ s4 = line()
 show(s1, s2, s3, s4)
 ```
 
-![svg](images/basic-shapes.svg)
+![svg](https://anandology.com/joy/images/basic-shapes.svg)
 
 ## Combining Shapes
 
@@ -81,7 +91,7 @@ d = donut(0, 0, 100)
 show(d)
 ```
 
-![svg](images/donut.svg)
+![svg](https://anandology.com/joy/images/donut.svg)
 
 
 ## Transformations
@@ -94,7 +104,7 @@ shape = circle(r=50) | translate(x=100, y=0)
 show(shape)
 ```
 
-![svg](images/circle-translate.svg)
+![svg](https://anandology.com/joy/images/circle-translate.svg)
 
 Transformations can be chained too.
 
@@ -103,7 +113,7 @@ r1 = rectangle(w=200, h=200)
 r2 = r1 | rotate(angle=45) | scale(1/SQRT2)
 show(r1, r2)
 ```
-![svg](images/rect-rotate.svg)
+![svg](https://anandology.com/joy/images/rect-rotate.svg)
 
 ## Higer-Order Transformations
 
@@ -120,7 +130,7 @@ shape = c | Repeat(10, Translate(x=10, y=0)
 show(shape)
 ```
 
-![svg](images/ten-circles.svg)
+![svg](https://anandology.com/joy/images/ten-circles.svg)
 
 Combined with rotation, it can create amusing patterns.
 
@@ -129,7 +139,7 @@ shape = line() | repeat(18, rotate(angle=10))
 show(shape)
 ```
 
-![svg](images/cycle-line.svg)
+![svg](https://anandology.com/joy/images/cycle-line.svg)
 
 
 We could do the same with a square:
@@ -139,7 +149,7 @@ shape = rectangle(w=200, h=200) | repeat(18, rotate(angle=10))
 show(shape)
 ```
 
-![svg](images/cycle-square.svg)
+![svg](https://anandology.com/joy/images/cycle-square.svg)
 
 or a rectangle:
 
@@ -148,7 +158,7 @@ shape = rectangle(w=200, h=100) | repeat(18, rotate(angle=10))
 show(shape)
 ```
 
-![svg](images/cycle-rect.svg)
+![svg](https://anandology.com/joy/images/cycle-rect.svg)
 
 We can combine multiple transformations and repeat.
 
@@ -157,7 +167,7 @@ shape = rectangle(w=300, h=300) | repeat(72, rotate(360/72) | scale(0.92))
 show(shape)
 ```
 
-![svg](images/square-spiral.svg)
+![svg](https://anandology.com/joy/images/square-spiral.svg)
 
 You can try the same with a circle too:
 
@@ -172,7 +182,7 @@ For more information, please checkout the [tutorial](https://github.com/anandolo
 
 ## Tutorial
 
-See [tutorial.ipynb](tutorial.ipynb).
+See [tutorial.ipynb](https://github.com/anandology/joy/blob/main/tutorial.ipynb).
 
 ## History & Credits
 

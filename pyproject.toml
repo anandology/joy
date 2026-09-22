@@ -1,0 +1,40 @@
+[project]
+name = "python-joy"
+dynamic = ["version"]
+description = "Tiny creative coding library in Python"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Anand Chitipothu", email = "anandology@gmail.com" },
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Homepage = "https://anandology.com/joy"
+Repository = "https://github.com/anandology/joy"
+Changelog = "https://github.com/anandology/joy/blob/main/CHANGES.md"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pyyaml",
+    "mkdocs-material",
+    "mkdocs-feather",
+]
+
+[tool.uv.sources]
+mkdocs-feather = { git = "https://github.com/pipalacademy/mkdocs-feather.git" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "joy.py"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["joy.py"]
+
+[tool.hatch.build.targets.sdist]
+include = ["joy.py", "tests/", "README.md", "CHANGES.md", "LICENSE"]

@@ -1,4 +1,7 @@
-## Unreleased\
+## Version 0.4.1 - 2026-09-21
+
+* Moved packaging to pyproject.toml, managed with uv
+* Included the README as the project description on PyPI
 
 ## Version 0.4.0 - 2024-12-24
 
