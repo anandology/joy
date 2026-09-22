@@ -166,13 +166,17 @@ c = circle(x=100, y=0, radius=50)
 shape = c | repeat(36*4, rotate(10) | scale(0.97))
 show(shape)
 ```
-![svg](images/circle-spiral.svg)
+![svg](https://anandology.com/joy/images/circle-spiral.svg)
 
-For more information, please checkout the [tutorial](tutorial.ipynb).
+For more information, please checkout the [tutorial](https://github.com/anandology/joy/blob/main/tutorial.ipynb).
 
 ## Tutorial
 
 See [tutorial.ipynb](tutorial.ipynb).
+
+## History & Credits
+
+This project was originally created by Anand Chitipothu while at FOSS United Foundation. It is now independently maintained.
 
 ## Acknowledgements
 
