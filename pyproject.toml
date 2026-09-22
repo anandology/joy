@@ -23,6 +23,9 @@ dev = [
     "mkdocs-feather",
 ]
 
+[tool.uv]
+required-version = ">=0.12"
+
 [tool.uv.sources]
 mkdocs-feather = { git = "https://github.com/pipalacademy/mkdocs-feather.git" }
 
